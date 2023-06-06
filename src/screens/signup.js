@@ -28,7 +28,7 @@ const SignUpPage = ({ navigation }) => {
 
       setIsLoading(true); // Set loading state to true
 
-      fetch('http://192.168.1.3:5000/signup', {
+      fetch('/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

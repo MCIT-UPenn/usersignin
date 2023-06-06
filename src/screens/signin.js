@@ -8,7 +8,7 @@ const SignInPage = ({ navigation }) => {
 
   const handleSignIn = () => {
     if (email && password) {
-      fetch('http://192.168.1.3:5000/signin', {
+      fetch('/signin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
